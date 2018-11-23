@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -14,11 +17,19 @@ body {
 .grid-parent {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #item-one {
-    background-color: aquamarine;
+    background-color: rgb(127, 255, 212);
 }
 
 #item-two {
@@ -28,4 +39,17 @@ body {
 #item-three {
     background-color: palevioletred;
     grid-column: span 2;
+    transition: 1s ease-in-out;
+}
+
+.rotatedDiv {
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+/* typography */
+h2 {
+    display: inline-block;
+    font-size: 38px;
+    font-family: 'Raleway', sans-serif;
 }
