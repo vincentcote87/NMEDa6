@@ -6,6 +6,7 @@
 
 html, body {
     height: 100%;
+    /* To prevent the scroll bars to appear when flipping in some browsers */
     overflow: hidden;
 }
 
