@@ -28,10 +28,6 @@ body {
     align-items: center;
 }
 
-#item-one {
-    background-color: rgb(127, 255, 212);
-}
-
 #item-two {
     background-color: grey;
 }
@@ -45,6 +41,14 @@ body {
 .rotatedDiv {
     transform: rotate(180deg);
     -moz-transform: rotate(180deg);
+}
+
+.aquamarine {
+    background-color: rgb(127, 255, 212);
+}
+
+.green {
+    background-color: rgb(0, 128, 0);
 }
 
 /* typography */
